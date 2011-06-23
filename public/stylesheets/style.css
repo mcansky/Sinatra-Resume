@@ -1,0 +1,104 @@
+body {
+  background: #DDD;
+  padding: 0;
+  margin: 0;
+}
+div.clear {
+	clear: both;
+}
+div#main {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:0;
+  padding-top: 50px;
+  margin-top: 20px;
+  background: #EEE;
+  -webkit-box-shadow: 2px 4px 12px 6px #555, -2px 4px 12px 6px #555;
+  -moz-box-shadow: 2px 4px 12px 6px #555, -2px 4px 12px 6px #555;
+  box-shadow: 2px 4px 12px 6px #555, -2px 4px 12px 6px #555;
+}
+div#banner {
+  position: absolute;
+  width: 940px;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: auto;
+  top: 0px;
+  color: #BA6148;
+  background: #443F38;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+p {
+  font-family: Arial;
+  margin: 10px;
+  color: #333;
+  letter-spacing: -1px;
+  font-size: 15px;
+  line-height: 21px;
+}
+div#footer {
+  background: #A00E22;
+  padding-top: 20px;
+  border-top: 1px solid #EEE;
+	margin-top: 30px;
+}
+div#footer p {
+  color: #EEE;
+  font-family: Arial;
+  letter-spacing: 0px;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: right;
+}
+h1 {
+  font-family: Buda;
+  font-weight: bold;
+  margin: 10px;
+  color: #EEE;
+  letter-spacing: 4px;
+  font-size: 24px;
+  line-height: 28px;
+}
+h1 img {
+  float: right;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+h2 {
+	font-family: Molengo;
+}
+p.intro {
+	margin-top: 40px;
+	font-size: 18px;
+	line-height: 23px;
+}
+div.zone { /*
+	border-bottom: 2px solid #333;
+}
+div.borderzone {
+	padding-top: 10px;
+	border-bottom: 8px solid #A00E22; */
+}
+li.past {
+	font-family: Arial;
+	margin: 10px;
+	color: #333;
+	letter-spacing: -1px;
+	margin-left: 25px;
+	line-height: 28px;
+	font-size: 15px;}
+	ul {
+		list-style-type: square;
+	}
+div#footer img {
+  vertical-align: middle;
+  margin: 3px;
+  /*
+  -webkit-box-shadow: 2px 0px 3px 1px #EEE, -2px 0px 3px 1px #EEE;
+  -moz-box-shadow: 2px 0px 3px 1px #EEE, -2px 0px 3px 1px #EEE;
+  box-shadow: 2px 0px 3px 1px #EEE, -2px 0px 3px 1px #EEE; */
+}
+div.innerpadding { padding: 5px;}
+a {color: #C3001F;}

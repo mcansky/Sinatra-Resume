@@ -1,0 +1,80 @@
+!!! XML
+!!!
+%html
+  %head
+    %link{:rel => 'stylesheet', :href => 'http://fonts.googleapis.com/css?family=Molengo', :type => 'text/css'}
+    %link{:rel => 'stylesheet', :href => 'http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT', :type => 'text/css'}
+    %link{:rel => 'stylesheet', :href => "stylesheets/reset.css", :type => 'text/css'}
+    %link{:rel => 'stylesheet', :href => "stylesheets/960.css", :type => 'text/css'}
+    %link{:rel => 'stylesheet', :href => "stylesheets/style.css", :type => 'text/css'}
+    %meta{'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}/
+    
+  %body
+    %div.container_16
+      %div#main.grid_16
+        %div#banner
+          %div.innerpadding
+            %h1 Thomas Riboulet
+        %div.clear
+        %div.grid_16
+          %p.intro Hi, I'm a freelance consultant working on different interesting projects for my clients and myself. I got an electronics and computer stuff diploma some years ago, but (let's be serious) I've been learning most stuff around the Net because it's where new and good stuff happen isn't it ?
+          %p.intro  I'm available for hire to write more Ruby and get systems running. I'm happy living in South of France (good food, good wine, cheap belgian beers, awesome not censored DSL connection -yet-) but I can still work for you even if you are on the other side of the planet. There is about no way for me to work on Microsoft or old Unix stuff : only GNU/Linux and *BSD systems.
+        %div.clear
+        %div.grid_7.prefix_1.zone
+          %p
+            Lately I've been playing around with :
+            = @toys.first(5).shuffle.join(', ')
+            = "."
+          %p
+            I also played with some code :
+            - i = 0
+            - @games.keys.shuffle.each do |game|
+              %a{:href => "#{@games[game]}"}
+                = game
+                = ", " unless i == @games.count - 1
+                - i += 1
+            = "."
+          %div.borderzone
+        %div.grid_7.zone
+          %p
+            But before that I was also playing with :
+            = @toys[5..-1].shuffle.join(', ')
+            = "."
+          %div.borderzone
+        %div.clear
+        %div.grid_7.prefix_1.zone
+          %p
+            I've been involved with different stuff over the last 11 years :
+            = @involved.join(', ')
+            = "."
+          %div.borderzone
+        %div.grid_7.zone
+          %p
+            In the future I'm planning to look into :
+            = @future.shuffle.join(', ') + " ..."
+            and more.
+          %div.borderzone
+        %div.grid_14.prefix_1.zone
+          %p
+            In the past ? Well I've done several stuff :
+            %br
+            %ul
+            - @past.each do |past_l|
+              %li.past= past_l
+          %div.borderzone
+        %div.clear
+        %div.grid_16
+          %p
+            You want to know more ? Follow me on
+            %a{:href => "http://twitter.com/#!/mcansky"}
+              Twitter
+            , on 
+            %a{:href => "http://github.com/mcansky"}
+              Github
+            , you can also get a
+            %a{:href => "/resume-en.pdf"}
+              resume
+            but you won't find me on Facebook.
+        %div.clear
+        %div#footer
+          %div.innerpadding
